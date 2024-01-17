@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/loginStyle.css">
+    <script src="./JS/loginValidation.js"></script>
     <title>Login form</title>
 </head>
 <body>
@@ -15,10 +16,10 @@
             <div class="form">
                 <form action="">
                     <div class="username">
-                    <input type="text" placeholder="Usuario">
+                    <input type="text" placeholder="Usuario" id="login" required>
                     </div>
                     <div class="password">
-                    <input type="password" placeholder="Senha">
+                    <input type="password" placeholder="Senha" id="password" required>
                     </div>
                     <div class="login-footer">
                     <label><input type="checkbox">Salvar login</label>
@@ -27,7 +28,7 @@
                     </div>
                     </div>
                     <div class="submit">
-                    <button type="submit">Entrar</button>
+                    <button type="submit" onclick="logar(); return false">Entrar</button>
                     </div>
                 </form>
                 <div class="create-account">
@@ -35,6 +36,13 @@
                 </div>
             </div>
         </section>
+    </div>
+    <div class="account-box">
+        <h1>Entre com essa conta!</h1>
+            <div class="login-senha">
+            <h3>Login: admin123</h3>
+            <h3>Senha: admin123</h3>
+        </div>
     </div>
 </body>
 </html>
